@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW6 - JQuery Stopwatch</title>
+    <title>HW6 - JQuery Stopwatch - Fall Theme</title>
 
     <!-- Include jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -56,8 +56,8 @@
                 seconds = 0;
                 $tens.html("00");
                 $seconds.html("00");
-                // set grey when reset
-                $("#timer").css("background-color", "grey")
+                // set brown when reset
+                $("#timer").css("background-color", "#A0522D")
             });
 
             // timer functionality in jQuery
@@ -78,13 +78,13 @@
                 }
             }
 
-            // style buttons
             var buttonStyles = {
                 "padding": "10px 20px",
                 "margin": "5px",
                 "border-radius": "5px",
-                "background-color": "#f0f0f0",
-                "border": "1px solid #ccc",
+                "background-color": "#D2691E",
+                "border": "1px solid #8B4513",
+                "color": "#FFF8DC",
                 "cursor": "pointer"
             };
             $buttonStart.css(buttonStyles);
@@ -110,32 +110,43 @@
     </script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
+            background-color: #FFFAF0;
             text-align: center;
+            color: #8B4513;
         }
 
         .wrapper {
             margin-top: 50px;
             padding: 20px;
-            border: 2px solid #333;
-            background-color: #f5f5f5;
+            border: 2px solid #8B4513;
+            background-color: #F5DEB3;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
         }
 
         /* timer class styling */
         .timer-background {
-            font-size: 2rem;
-            padding: 10px;
+            font-size: 2.5rem;
+            padding: 15px;
             margin-bottom: 20px;
+            background-size: cover;
+            background-color: #8B4513;
+            color: #FFF8DC;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #CD853F;
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Stopwatch</h1>
+        <h1>Fall-Themed Stopwatch</h1>
         <h2>JQuery Stopwatch</h2>
         <!-- add id to timer -->
-        <p id = "timer"><span id = "seconds">00</span>:<span id = "tens">00</span></p>
+        <p id="timer"><span id="seconds">00</span>:<span id="tens">00</span></p>
         <button id="button-start">Start</button>
         <button id="button-stop">Stop</button>
         <button id="button-reset">Reset</button>
